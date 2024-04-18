@@ -81,7 +81,7 @@ while game == 1:
         if event.type == pygame.QUIT:
             game = 0
             
-        
+    0    
     window.fill(WHITE)
     if score1 > 0:
         draw_cube(10, 10, BLACK, 30, 30)
