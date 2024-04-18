@@ -11,8 +11,8 @@ BLUE = (0, 0, 255)
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
-p1x, p1y, p1color, score1 = 0, 300, RED, 0
-p2x, p2y, p2color, score2 = 780, 300, GREEN, 0
+p1x, p1y, p1color, score1 = 0, 300, RED, 3
+p2x, p2y, p2color, score2 = 780, 300, GREEN, 3
 bx, by, bcolor, bdirx, bdiry = 400, 300, WHITE, 1, 1
 pSpeed = 2
 bspeed = 1.0
@@ -85,7 +85,7 @@ while game == 1:
     print(score1, score2)
     
     window.fill(WHITE)
-    if score1 > 3:
+    if score1 > 2:
         draw_cube(10, 10, BLACK, 30, 30)
         draw_cube(50, 10, BLACK, 30, 30)
         draw_cube(90, 10, BLACK, 30, 30)
