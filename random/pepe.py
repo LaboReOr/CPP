@@ -52,12 +52,12 @@ while game == 1:
         bdirx = 1
     
     if bx < 0:
-        score1 += 1
+        score1 -= 1
         bx, by = 400, 300
         p1y, p2y = 300, 300
         sleeping = 1
     if bx > 800:
-        score2 += 1
+        score2 -= 1
         bx, by = 400, 300
         sleeping = 1
     
@@ -81,14 +81,29 @@ while game == 1:
         if event.type == pygame.QUIT:
             game = 0
             
-    
-    print(score1, score2)
-    
+        
     window.fill(WHITE)
-    if score1 > 2:
+    if score1 > 0:
         draw_cube(10, 10, BLACK, 30, 30)
-        draw_cube(50, 10, BLACK, 30, 30)
-        draw_cube(90, 10, BLACK, 30, 30)
+        if score1 > 1:
+            draw_cube(50, 10, BLACK, 30, 30)
+            if score1 > 2:
+                draw_cube(90, 10, BLACK, 30, 30)
+    else:
+        print("Green player won!")
+        game = 0
+    
+    if score2 > 0:
+        draw_cube(760, 10, BLACK, 30, 30)
+        if score2 > 1:
+            draw_cube(720, 10, BLACK, 30, 30)
+            if score2 > 2: 
+                draw_cube(680, 10, BLACK, 30, 30)
+    else:
+        print("Red player won!")
+        game = 0
+    
+    
     
     draw_cube(p1x, p1y, p1color, 20, 100)
     draw_cube(p2x, p2y, p2color, 20, 100)
