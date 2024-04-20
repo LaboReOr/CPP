@@ -4,3 +4,4 @@
 </div>
 
 * super REPOSITORIO con SUPER cositas de SUPER clase y SUPER pavadas
+<img src="/img/cpp.jpg">
