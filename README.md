@@ -1,6 +1,9 @@
 <div align="center">
   
 # Super repositorio LABORATORIO  
+
+SUPER repsitorio con SUPER cositas de la SUPER clase y SUPER pavadas
+
 </div>
 
-* super REPOSITORIO con SUPER cositas de SUPER clase y SUPER pavadas
+<img src="/img/cpp.jpg">
