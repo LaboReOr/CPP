@@ -25,4 +25,4 @@ while True:
                 palx = palx + abc[i]
                 break
     if pal == "camilo":
-        break
+        break 
