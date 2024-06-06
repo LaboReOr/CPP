@@ -1,3 +1,4 @@
+
 def coef(vel, mas):
     coeficientes = []
     for i in range(len(vel)):
